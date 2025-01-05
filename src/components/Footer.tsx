@@ -12,12 +12,6 @@ const footerLinks = {
     { name: 'Status', href: '/status' },
     { name: 'Changelog', href: '/changelog' }
   ],
-  support: [
-    { name: 'Documentation', href: 'https://docs.enqro.com' },
-    { name: 'Discord', href: 'https://discord.gg/enqro' },
-    { name: 'YouTube', href: 'https://youtube.com/@enqro' },
-    { name: 'FAQ', href: 'https://docs.enqro.com/faq' }
-  ],
   legal: [
     { name: 'Privacy', href: '/legal/privacy' },
     { name: 'Terms', href: '/legal/terms' },
