@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { Navbar } from './components/Navbar';
+import { Background } from './components/Background';
+import { HomePage } from './components/HomePage';
+import { DownloadPage } from './components/DownloadPage';
+import { ScriptDetailsPage } from './pages/ScriptDetailsPage';
+import { StatusPage } from './pages/StatusPage';
+import { ChangelogPage } from './pages/ChangelogPage';
+import { PrivacyPage } from './pages/legal/PrivacyPage';
+import { TermsPage } from './pages/legal/TermsPage';
+import { LicensePage } from './pages/legal/LicensePage';
+import { Footer } from './components/Footer';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="min-h-screen bg-navy-950 text-white relative">
+      <Background />
+      <div className="relative">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/download/*" element={<DownloadPage />} />
+          <Route path="/script/:id" element={<ScriptDetailsPage />} />
+          <Route path="/status" element={<StatusPage />} />
+          <Route path="/changelog" element={<ChangelogPage />} />
+          <Route path="/legal/privacy" element={<PrivacyPage />} />
+          <Route path="/legal/terms" element={<TermsPage />} />
+          <Route path="/legal/license" element={<LicensePage />} />
+        </Routes>
+        <Footer />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
-
-export default App
