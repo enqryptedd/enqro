@@ -12,8 +12,6 @@ const footerLinks = {
     { name: 'Status', href: '/status' },
     { name: 'Changelog', href: '/changelog' }
   ],
-  support: [
-  ],
   legal: [
     { name: 'Privacy', href: '/legal/privacy' },
     { name: 'Terms', href: '/legal/terms' },
@@ -43,7 +41,6 @@ export function Footer() {
           
           {/* Navigation Sections */}
           <FooterSection title="Product" links={footerLinks.product} />
-          <FooterSection title="Support" links={footerLinks.support} />
           <FooterSection title="Legal" links={footerLinks.legal} />
         </div>
 
