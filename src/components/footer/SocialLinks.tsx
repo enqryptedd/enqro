@@ -2,10 +2,8 @@ import React from 'react';
 import { Github, Twitter, MessageCircle, Youtube } from 'lucide-react';
 
 const socials = [
-  { icon: Github, href: 'https://github.com/enqro', label: 'GitHub' },
-  { icon: Twitter, href: 'https://twitter.com/enqro', label: 'Twitter' },
+  { icon: Github, href: 'https://github.com/enqryptedd', label: 'GitHub' },
   { icon: MessageCircle, href: 'https://discord.gg/enqro', label: 'Discord' },
-  { icon: Youtube, href: 'https://youtube.com/@enqro', label: 'YouTube' }
 ];
 
 export function SocialLinks() {
