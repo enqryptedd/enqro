@@ -12,6 +12,8 @@ const footerLinks = {
     { name: 'Status', href: '/status' },
     { name: 'Changelog', href: '/changelog' }
   ],
+  support: [
+  ],
   legal: [
     { name: 'Privacy', href: '/legal/privacy' },
     { name: 'Terms', href: '/legal/terms' },
