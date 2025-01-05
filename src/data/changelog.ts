@@ -2,8 +2,8 @@ import { ChangelogEntry } from '../types/changelog';
 
 export const changelog: ChangelogEntry[] = [
   {
-    version: '2.4.0',
-    date: '2024-03-15',
+    version: '2.0.0',
+    date: '2025-01-05',
     changes: [
       { type: 'feature', description: 'Added new script library interface with improved search' },
       { type: 'security', description: 'Enhanced anti-detection system with behavioral analysis' },
@@ -11,8 +11,8 @@ export const changelog: ChangelogEntry[] = [
     ]
   },
   {
-    version: '2.3.2',
-    date: '2024-03-01',
+    version: '1.5.0',
+    date: '2024-09-01',
     changes: [
       { type: 'fix', description: 'Fixed rare crash when loading large scripts' },
       { type: 'improvement', description: 'Updated UI elements for better visibility' },
@@ -20,7 +20,7 @@ export const changelog: ChangelogEntry[] = [
     ]
   },
   {
-    version: '2.3.1',
+    version: '1.0.0',
     date: '2024-02-15',
     changes: [
       { type: 'performance', description: 'Reduced startup time by 40%' },
