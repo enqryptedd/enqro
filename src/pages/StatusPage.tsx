@@ -9,12 +9,12 @@ interface ServiceStatus {
 }
 
 const services: ServiceStatus[] = [
-  { name: 'Script Execution Engine', status: 'operational' },
-  { name: 'Authentication System', status: 'operational' },
-  { name: 'Script Library', status: 'operational' },
-  { name: 'Auto-Updates', status: 'operational' },
-  { name: 'Memory Scanner', status: 'operational' },
-  { name: 'API Services', status: 'operational' }
+  { name: 'Script Execution Engine', status: 'maintenance' },
+  { name: 'Authentication System', status: 'maintenance' },
+  { name: 'Script Library', status: 'maintenance' },
+  { name: 'Auto-Updates', status: 'maintenance' },
+  { name: 'Memory Scanner', status: 'maintenance' },
+  { name: 'API Services', status: 'maintenance' }
 ];
 
 function StatusIndicator({ status }: { status: ServiceStatus['status'] }) {
@@ -39,7 +39,7 @@ export function StatusPage() {
             <div className="flex items-center gap-3 mb-8">
               <StatusIndicator status="operational" />
               <h1 className="text-3xl font-bold">
-                {allOperational ? 'All Systems Operational' : 'System Status'}
+                {allOperational ? 'All Systems Under Maintenance' : 'System Status'}
               </h1>
             </div>
 
