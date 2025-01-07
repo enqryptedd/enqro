@@ -54,7 +54,7 @@ export function Footer() {
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-1 px-3 py-1 bg-green-500/10 rounded-full">
               <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-              <span className="text-xs text-green-400">All Systems Operational</span>
+              <span className="text-xs text-blue-400">All Systems Under Maintenance</span>
             </div>
           </div>
         </div>
